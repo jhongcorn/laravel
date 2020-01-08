@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*select 使用*/
+.md-select {
+ background-color: transparent;
+ border: none;
+ border-bottom: 1px solid #bdbdbd;
+ border-radius: 0;
+ outline: 0;
+ height: 2.1rem;
+ width: 100%;
+ font-size: 1rem;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ -webkit-box-sizing: content-box;
+ box-sizing: content-box;
+ -webkit-transition: all .3s;
+ transition: all .3s;
+ }
+ .md-select:active {
+ border-bottom: 1px solid #4285F4;
+ -webkit-box-shadow: 0 1px 0 0 #4285F4;
+ box-shadow: 0 1px 0 0 #4285F4;
+ } 
+
+/*checkbox使用*/
+ .onoffswitch3
+{
+    position: relative; width: 100%;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch3-checkbox {
+    display: none;
+}
+
+.onoffswitch3-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0px solid #999999; border-radius: 0px;
+}
+
+.onoffswitch3-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch3-inner > span {
+    display: block; float: left; position: relative; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch3-inner .onoffswitch3-active {
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #FFFFFF;
+}
+
+.onoffswitch3-inner .onoffswitch3-inactive {
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #FFFFFF;
+    text-align: right;
+}
+
+.onoffswitch3-switch {
+    display: block; width: 50%; margin: 0px; text-align: center; 
+    border: 0px solid #999999;border-radius: 0px; 
+    position: absolute; top: 0; bottom: 0;
+}
+.onoffswitch3-active .onoffswitch3-switch {
+    background: #27A1CA; left: 0;
+}
+.onoffswitch3-inactive .onoffswitch3-switch {
+    background: red; right: 0;
+}
+.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-inner {
+    margin-left: 0;
+}
+
+
+
+footer a{
+    font-size: 16px;
+}
+.searchtext{
+    font-size: 16px;
+}
+.up-img{
+    position:absolute;
+    left:0;
+    right: 0;
+    top:11%;      
+}
+.avatar {
+
+  height:20vw;
+  width: 20vw;
+}
+.up-img-body{
+    height:800px;
+    width:100%;
+}
+.cityimg{
+    height:350px;
+}
+
+@media (max-width: 540px){
+    .up-img-body{
+        height:200px;
+        width:100%;
+     }
+    .cityimg{
+        height:290px;
+    }
+    .up-img{
+        position:absolute;
+        left:0;
+        right: 0;
+        top:6%;  
+    }
+    footer a{
+        font-size: 0.5vw;
+    }
+    .searchtext{
+     font-size: 0.5vw;
+    }
+}
